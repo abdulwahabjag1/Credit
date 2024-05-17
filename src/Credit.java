@@ -1,11 +1,14 @@
 public class Credit {
     public static int findDigits(long num){
-        int count = 0;
+        int result = 0;
         while(num>0){
             int digit = (int)num % 10;
-                count++;
+                result++;
+            if(result==index){
+                return digit;
+            }
                 num=num/10;
         }
-        return count;
+        return -1;
     }
 }
